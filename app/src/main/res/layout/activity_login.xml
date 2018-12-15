@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bannermobile"
+        android:layout_marginBottom="80dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+
+        app:backgroundTint="#5C68F3"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:hint="nome de usuário"
+        android:textColor="#646464"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/emailLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.AppCompatEditText
+        app:backgroundTint="#5C68F3"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:textColor="#646464"
+        android:layout_gravity="center"
+        android:id="@+id/senhaLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:textSize="9dp"
+            android:text="Esqueceu seus dados? "
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@android:color/transparent"
+            android:textColor="#9E9E9E"
+            android:textStyle="bold"
+            android:textSize="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Obtenha ajuda para entrar"/>
+    </LinearLayout>
+
+    <Button
+        android:textSize="11dp"
+        android:text="Entrar"
+        android:textColor="#ffff"
+        android:background="@drawable/avancar_button"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/entrarButton"
+        android:layout_width="210dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="80dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não tem uma conta?"
+            android:textSize="9dp" />
+
+        <Button
+            android:id="@+id/btnCadastrarFromLogin"
+            android:paddingBottom="5dp"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:text="Cadastre-se"
+            android:textColor="#9E9E9E"
+            android:textSize="7dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

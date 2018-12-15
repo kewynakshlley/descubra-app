@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+        <ImageView
+            android:id="@+id/img1"
+            android:background="@drawable/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img2"
+            android:background="@drawable/img2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img3"
+            android:background="@drawable/img3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img4"
+            android:background="@drawable/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img5"
+            android:background="@drawable/img5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img6"
+            android:background="@drawable/img6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img7"
+            android:background="@drawable/img7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img8"
+            android:background="@drawable/img8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img9"
+            android:background="@drawable/img9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewFlipper>
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logoandroid"/>
+
+    <Button
+        android:text="@string/cadastrar"
+        android:textColor="#ffff"
+        android:textSize="10dp"
+        android:id="@+id/btnCadastrar"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/transparent_bg_button" />
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/cadastrar_desc"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="95dp"
+        android:text="Já tem uma conta? Faça o "
+        android:textColor="#ffff"
+        android:textSize="11dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="95dp" />
+
+    <Button
+        android:background="@android:color/transparent"
+        android:id="@+id/logIn"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/txtLogin"
+        android:layout_toEndOf="@+id/txtLogin"
+        android:text="Log in"
+        android:textSize="9dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/txtLogin" />
+
+
+</RelativeLayout>
